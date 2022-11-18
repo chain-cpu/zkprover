@@ -1,0 +1,13 @@
+build
+testvectors/commit.bin
+testvectors/verifier.dat
+testvectors/constantstree.bin
+testvectors/stark.json
+testvectors/stark.json.zkin.json
+testvectors/starkverifier_0001.zkey
+testvectors/keccak_pols.json
+testvectors/output
+testvectors/witness.wtns
+testvectors/constants.bin
+testvectors/zkevm.*
+testvectors/basic.*

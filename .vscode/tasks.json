@@ -1,0 +1,46 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build zkProver",
+			"command": "make",
+			"args": [
+				"dbg=1",
+				"-j$(nproc)"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/gcc"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build bctree",
+			"command": "make",
+			"args": [
+				"bctree",
+				"dbg=1",
+				"-j$(nproc)"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"detail": "compiler: /usr/bin/gcc"
+		}
+	]
+}
